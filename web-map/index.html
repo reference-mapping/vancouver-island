@@ -383,12 +383,10 @@
         function pop_SelectedFirstNationsReserves_6(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <th scope="row">Population (2021)</th>\
-                        <td>' + (feature.properties['population'] !== null ? autolinker.link(feature.properties['population'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['population'] !== null ? autolinker.link(feature.properties['population'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <th scope="row">Band</th>\
-                        <td>' + (feature.properties['BAND_NAME'] !== null ? autolinker.link(feature.properties['BAND_NAME'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2">' + (feature.properties['BAND_NAME'] !== null ? autolinker.link(feature.properties['BAND_NAME'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -405,7 +403,7 @@
                 weight: 1.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(235, 225, 52,1.0)',
+                fillColor: 'rgba(255,226,63,1.0)',
                 interactive: true,
             }
         }
